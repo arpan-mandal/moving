@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moving — video wallpapers for Mac</title>
+  <meta name="description" content="Moving is a native macOS utility for video and image wallpapers. Find the installer, setup instructions, system requirements, and playback specifications.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Moving — video wallpapers for Mac">
+  <meta property="og:description" content="Your own videos and images, on your Mac desktop.">
+  <link rel="icon" href="./assets/moving-icon.png" type="image/png">
+  <link rel="preload" href="./assets/inter-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="topbar" id="top">
+      <div class="project">
+        <a class="brand" href="#top">
+          <img src="./assets/moving-mark.svg" alt="" width="30" height="18">
+          <span>Moving</span>
+        </a>
+        <span class="version">v{{VERSION}}</span>
+      </div>
+      <div class="toolbar">
+        <a href="https://arpanm.xyz/">arpanm.xyz</a>
+        <button class="mode" type="button" hidden>Light mode</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="intro" aria-labelledby="title">
+        <div class="intro-copy">
+          <p class="eyebrow">macOS desktop utility</p>
+          <h1 id="title">Video wallpapers <span>for Mac.</span></h1>
+          <p class="lead">Put your own videos and images on your desktop. Choose a fit for each display and control playback from the menu bar.</p>
+          <div class="download" id="download">
+            <!-- release-download -->
+          </div>
+        </div>
+
+        <figure class="app-preview">
+          <a class="window" href="./assets/moving-library.png" aria-label="View the full-size Moving library screenshot">
+            <span class="window-bar" aria-hidden="true"><i></i><i></i><i></i><span>Moving / Wallpapers</span></span>
+            <img src="./assets/moving-library.png" alt="Moving’s wallpaper library with Aurora Drift selected, alongside Crop and Stretch controls" width="1520" height="888" fetchpriority="high">
+          </a>
+          <figcaption><span>The Moving library</span><a href="#demo">Watch a wallpaper loop <span aria-hidden="true">↓</span></a></figcaption>
+        </figure>
+      </section>
+
+      <div class="quick-facts" aria-label="Compatibility">
+        <span><b>OS</b> macOS 14+</span>
+        <span><b>CPU</b> Apple silicon + Intel</span>
+        <span><b>Package</b> Universal DMG</span>
+      </div>
+
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#install">Installation</a>
+        <a href="#specs">Specs</a>
+        <a href="#performance">Performance</a>
+        <a href="#demo">Demo</a>
+        <a href="#help">FAQ</a>
+        <a href="#changes">Release notes</a>
+      </nav>
+
+      <div class="split">
+        <section class="section" id="install">
+          <h2>Installation</h2>
+          <ol class="steps">
+            <li>Open the downloaded <code>.dmg</code> in Finder.</li>
+            <li>Drag <strong>Moving</strong> into <strong>Applications</strong>, then eject the disk image.</li>
+            <li>Open Moving from Applications. Click its menu bar icon and choose <strong>Library</strong>.</li>
+            <li>Choose a bundled wallpaper or click <strong>Import</strong>. Pick <strong>Crop</strong> or <strong>Stretch</strong> and click <strong>Apply Wallpaper</strong>.</li>
+          </ol>
+          <p class="note">Closing the library leaves playback running. To start Moving when you sign in, turn on <strong>Settings → Launch at login</strong>.</p>
+          <!-- release-checksum -->
+        </section>
+
+        <section class="section" id="features">
+          <h2>What it does</h2>
+          <dl class="features">
+            <div><dt>Wallpaper fit</dt><dd>Crop keeps the original proportions and trims the edges. Stretch fills the screen by resizing to its shape.</dd></div>
+            <div><dt>Per-display playback</dt><dd>Set a different wallpaper and fit for each connected display.</dd></div>
+            <div><dt>Pause when covered</dt><dd>When a maximized or full-screen window covers the display, Moving holds the current frame and resumes when the desktop is visible again.</dd></div>
+            <div><dt>Library &amp; menu bar</dt><dd>Preview, search, favorite and group your files. Pause or switch wallpapers from the menu bar.</dd></div>
+          </dl>
+        </section>
+      </div>
+
+      <section class="section" id="specs">
+        <h2>Technical specifications</h2>
+        <dl class="specs">
+          <div><dt>System</dt><dd>macOS 14.0 or later</dd></div>
+          <div><dt>Architectures</dt><dd>arm64 and x86_64 in one build</dd></div>
+          <div><dt>Video</dt><dd>Compatible local MP4 and MOV files. Playback is muted.</dd></div>
+          <div><dt>Images</dt><dd>JPEG, PNG, HEIC and other supported still formats</dd></div>
+          <div><dt>Native stack</dt><dd>Swift, AppKit, SwiftUI and AVFoundation</dd></div>
+          <div><dt>Storage</dt><dd>Local library, thumbnails and playback cache</dd></div>
+          <div><dt>Desktop</dt><dd>One assignment per display, shared across ordinary Spaces</dd></div>
+          <div><dt>Bundled media</dt><dd>Aurora Drift, Solar Tide and Still Horizon</dd></div>
+        </dl>
+      </section>
+
+      <section class="section" id="performance">
+        <h2>Playback &amp; performance</h2>
+        <table>
+          <caption>Maximum playback settings with automatic quality</caption>
+          <thead><tr><th scope="col">Profile</th><th scope="col">Long edge</th><th scope="col">Frame rate</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Battery Saver</th><td>1,280 px</td><td>24 fps</td></tr>
+            <tr><th scope="row">Balanced</th><td>1,920 px</td><td>30 fps</td></tr>
+            <tr><th scope="row">Performance</th><td>Source resolution</td><td>60 fps</td></tr>
+          </tbody>
+        </table>
+        <p>With battery optimization enabled, Balanced uses 1,280 px and 24 fps on battery. Videos above the selected limits may need a one-time conversion. Each active display adds playback load.</p>
+        <details>
+          <summary>Measured on an Apple M5</summary>
+          <p>Moving 1.2.0 build 6, one display, AC power, one cached 1080p/30 fps clip. The app process averaged <strong>0.047% of one core</strong> and <strong>62.8 MiB</strong> median physical memory footprint over 45 seconds. The separate macOS decoder averaged 0.051% and 66.0 MiB over 10 seconds. This test measured process CPU and memory. Battery drain and GPU use are unmeasured.</p>
+        </details>
+      </section>
+
+      <section class="section" id="demo">
+        <h2>Wallpaper demo</h2>
+        <div class="demo">
+          <video controls loop muted playsinline preload="none" poster="./assets/aurora-drift-poster.jpg" width="1280" height="720" aria-label="Aurora Drift wallpaper demo">
+            <source src="./assets/aurora-drift.mp4" type="video/mp4">
+            <a href="./assets/aurora-drift.mp4">Open the Aurora Drift video</a>
+          </video>
+          <div>
+            <h3>Aurora Drift</h3>
+            <p>A six-second, silent loop included with Moving. Press Play to see it in motion.</p>
+            <p class="note">1280 × 720 · 24 fps</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="help">
+        <h2>Help &amp; FAQ</h2>
+        <details><summary>Why won't a video import?</summary><p>Try a local, unprotected H.264 MP4 and check whether it opens in QuickTime Player. Download any cloud-only file first. If a file that was already in Moving has moved, use <strong>Locate File</strong>.</p></details>
+        <details><summary>Why is the wallpaper paused or showing a still?</summary><p>Check the status under <strong>Displays</strong>. Covered displays, manual pause, or energy settings can suspend playback. Moving runs over the desktop while open. macOS manages its own login and lock-screen wallpaper.</p></details>
+        <details><summary>How do I update or upgrade from Motion?</summary><p>Quit the app before replacing it in Applications. When upgrading from the older Motion app, move <strong>Motion.app</strong> to Trash and install <strong>Moving.app</strong>. The library is stored separately. If an imported file needs access again, use <strong>Locate File</strong>.</p></details>
+        <details><summary>How do I restore my system wallpaper or uninstall?</summary><p>Use <strong>Displays → Restore All Displays</strong> to clear assignments. To uninstall, turn off <strong>Launch at login</strong>, quit Moving, and move it from Applications to Trash. The original files stay where you saved them.</p></details>
+        <details><summary>What if macOS blocks the installer?</summary><p>Check that your Mac meets the system requirements and that the file matches the published checksum. A public download requires a Developer ID signature and Apple notarization. Keep Gatekeeper enabled.</p></details>
+      </section>
+
+      <div class="split tail">
+        <section class="section" id="changes">
+          <h2>Release notes</h2>
+          <h3>1.2.0 / build 7</h3>
+          <ul>
+            <li>New Moving name, original logo, and smaller library window.</li>
+            <li>Covered displays retain a still frame and resume from the saved point.</li>
+            <li>The menu bar popup takes focus and dismisses on Escape or outside clicks. Previous and next are arrow buttons.</li>
+          </ul>
+        </section>
+        <section class="section" id="privacy">
+          <h2>Privacy &amp; license</h2>
+          <p>Moving stores its library, assignments and playback cache on your Mac. The app uses no account, telemetry, cloud sync or remote wallpaper catalog.</p>
+          <p>This page has no analytics scripts. The theme switch saves your choice in your browser.</p>
+          <p><a href="./LICENSE.txt">App license</a> · <a href="./assets/inter-license.txt">Font license</a></p>
+        </section>
+      </div>
+
+      <footer class="footer">
+        <span>Moving · v{{VERSION}} · macOS</span>
+        <a href="#top">Back to top ↑</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

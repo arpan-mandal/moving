@@ -1,0 +1,12 @@
+Artifacts/
+.DS_Store
+xcuserdata/
+*.xcuserstate
+.build/
+.env
+.env.*
+*.p8
+*.p12
+*.mobileprovision
+/Documentation/PLAN.md
+/Documentation/WEBSITE-HANDOFF.md

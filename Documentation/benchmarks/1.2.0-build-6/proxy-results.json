@@ -1,0 +1,62 @@
+[
+  {
+    "coldSeconds" : 1.9147069999999999,
+    "fps" : 30,
+    "height" : 1080,
+    "policy" : "Balanced on AC",
+    "sizeBytes" : 17353003,
+    "trial" : 1,
+    "warmLookupSeconds" : 0.00061045800000000003,
+    "width" : 1920
+  },
+  {
+    "coldSeconds" : 1.805259334,
+    "fps" : 30,
+    "height" : 1080,
+    "policy" : "Balanced on AC",
+    "sizeBytes" : 17353003,
+    "trial" : 2,
+    "warmLookupSeconds" : 0.00027220899999999998,
+    "width" : 1920
+  },
+  {
+    "coldSeconds" : 1.8056332909999999,
+    "fps" : 30,
+    "height" : 1080,
+    "policy" : "Balanced on AC",
+    "sizeBytes" : 17353003,
+    "trial" : 3,
+    "warmLookupSeconds" : 0.00013791699999999999,
+    "width" : 1920
+  },
+  {
+    "coldSeconds" : 1.4753964589999999,
+    "fps" : 24,
+    "height" : 720,
+    "policy" : "Balanced with battery limits",
+    "sizeBytes" : 10967116,
+    "trial" : 1,
+    "warmLookupSeconds" : 0.000198333,
+    "width" : 1280
+  },
+  {
+    "coldSeconds" : 1.4824426669999999,
+    "fps" : 24,
+    "height" : 720,
+    "policy" : "Balanced with battery limits",
+    "sizeBytes" : 10967116,
+    "trial" : 2,
+    "warmLookupSeconds" : 0.00018937500000000001,
+    "width" : 1280
+  },
+  {
+    "coldSeconds" : 1.4749637500000001,
+    "fps" : 24,
+    "height" : 720,
+    "policy" : "Balanced with battery limits",
+    "sizeBytes" : 10967116,
+    "trial" : 3,
+    "warmLookupSeconds" : 0.00032112500000000001,
+    "width" : 1280
+  }
+]
