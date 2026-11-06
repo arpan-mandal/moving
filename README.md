@@ -2,9 +2,9 @@
 
 Moving is a free, open-source macOS app for video and image wallpapers. Import media from your Mac, choose a fit for each display, and control playback from the menu bar.
 
-[Project website](https://moving-wallpaper-nine.vercel.app/) · [Downloads](https://github.com/arpan-mandal/moving/releases) · [Report an issue](https://github.com/arpan-mandal/moving/issues)
+[Project website](https://moving.arpanm.xyz/) · [Downloads](https://github.com/arpan-mandal/moving/releases) · [Report an issue](https://github.com/arpan-mandal/moving/issues)
 
-![Moving’s wallpaper library with Aurora Drift selected and the Crop and Stretch controls visible](Website/src/assets/moving-library.png)
+![Moving’s wallpaper library with Aurora Drift selected and the Crop and Stretch controls visible](Documentation/images/library.png)
 
 ## Features
 
@@ -56,11 +56,10 @@ Run the tests in a logged-in macOS desktop session. The smoke test uses the Rele
 | `Resources/` | App metadata, sandbox entitlements, icons, and demo wallpapers |
 | `Tests/` | Core tests and a sandboxed import and playback probe |
 | `Scripts/` | Build, test, artwork generation, packaging, and signing |
-| `Website/` | Static project website and its build instructions |
 | `Documentation/` | Architecture, verification, and release notes for maintainers |
 
 Moving keeps its library, thumbnails, and playback cache on your Mac. It reads media selected in the app and creates local playback copies when needed. The app uses no account, telemetry, or cloud sync. See the [architecture notes](Documentation/ARCHITECTURE.md) and [benchmark data](Documentation/benchmarks/1.2.0-build-6/Benchmark.md) for implementation details and measured performance.
 
 ## Contributing and license
 
-See [CONTRIBUTING.md](CONTRIBUTING.md), [CHANGELOG.md](CHANGELOG.md), and [SECURITY.md](SECURITY.md). Moving’s code, logo, and bundled demo assets are released under the [MIT License](LICENSE). The website bundles Inter under the [SIL Open Font License](Website/src/assets/inter-license.txt).
+See [CONTRIBUTING.md](CONTRIBUTING.md), [CHANGELOG.md](CHANGELOG.md), and [SECURITY.md](SECURITY.md). Moving’s code, logo, and bundled demo assets are released under the [MIT License](LICENSE).

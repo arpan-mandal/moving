@@ -8,4 +8,4 @@
 - Balanced mode uses lower playback limits on battery when optimization is enabled.
 - The menu bar popup takes focus when opened and closes on Escape or outside clicks. The previous and next controls use arrows with accessibility labels.
 
-The first public source release includes the native app, website, build scripts, and tests. The universal installer is available as an ad hoc signed prerelease for local testing.
+The first public source release includes the native app, build scripts, and tests. The universal installer is available as an ad hoc signed prerelease for local testing.
